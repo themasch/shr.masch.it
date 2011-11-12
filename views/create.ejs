@@ -1,0 +1,19 @@
+<form action="/create" method="post" data-submitTo=".body" class="cf">
+    <label for="shrType">
+        Type: 
+    </label>
+    <select name="type" id="shrType">
+        <option value="paste">paste</option>
+        <option value="image">image</option>
+    </select>
+    &nbsp;|&nbsp;
+    <label for="shrName"> Title: </label>
+    <input type="text" id="shrName" name="title" />
+    &nbsp;|&nbsp;
+    <label for="shrNick"> Userame: </label>
+    <input type="text" id="shrNick" name="nick" />
+    <div class="frm">
+        <%- partial('tmpl/paste/new') %>
+    </div>
+    <input type="submit" value="paste"  style="float: right;">
+</form>

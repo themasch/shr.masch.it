@@ -1,0 +1,105 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #222;
+  background-image: url("/images/dinpattern-stripe.gif");
+  overflow-y: scroll;
+}
+
+.wrapper {
+    width: 960px;
+    margin: auto;
+}
+.body {
+    background-color: whitesmoke;
+    padding:10px;
+}
+header { 
+    text-shadow: black 0 0 3px;
+    color: whitesmoke;
+}
+header h1 {
+    margin:0;
+    padding: 0;
+    font-size: 600%;
+    line-height: 70%;
+    float: left;
+}
+h1 a:hover {
+    color: #9CCD00;
+}
+h1 a {
+    color: #BEEF00;
+    text-decoration: none;
+}
+
+nav { 
+    float: right;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    margin-top: 3.3em;
+}
+nav ul, nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    line-height: 30%;
+}
+nav a {
+    font-size: 200%;
+    font-weight: bold;
+    color: #BEEF00;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #9CCD00;
+}
+
+span.info {
+    color: gray;
+    font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
+}
+pre { 
+    background-color: #eee;
+    margin: 0;
+}
+
+.file { 
+    margin-top: 0.5em;
+}
+
+a {
+  color: #00B7FF;
+}
+.frm { 
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+}
+
+input, select, textarea {
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+}
+textarea { 
+    resize: vertical;
+}
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}

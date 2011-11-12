@@ -1,0 +1,29 @@
+<div class="file">
+    <label>file name:</label>
+    <input type="text" name="file[0]['name']" class="shrFilename" />
+    &nbsp;|&nbsp;
+    <label>syntax:</label>
+    <select name="file[0]['lang']">
+        <option value="none">plain text</option>
+        <option value="php">PHP</<option>
+    </select>
+    <textarea name="file[0]['content']" style="width:934px;min-height:300px;padding:2px;border:1px solid;"></textarea>
+</div>
+
+<a href="#" id="addFile">&plus; File</a>
+
+<script type="text/javascript">
+$(function() { 
+    $('#addFile').click(function(evt) { 
+        var c = $('.file').length;
+        var n = $('.file:first').clone().insertBefore(this).css('display', 'none');
+        $('input', n).val('');
+        $('input, select, textarea', n).each(function() {
+            var nName = $(this).attr('name').replace(/\[\d\]/, '[' + c + ']');
+            $(this).attr('name', nName);
+        });
+        $(n).slideDown();
+        evt.preventDefault();
+    });
+});
+</script>
