@@ -63,6 +63,7 @@ span.info {
 pre { 
     background-color: #eee;
     margin: 0;
+    padding: 0.5em;
 }
 
 .file { 

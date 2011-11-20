@@ -8,7 +8,7 @@ var cradle  = require('cradle');
 var db      = new (cradle.Connection)().database('shr');
 
 var app = module.exports = express.createServer();
-
+var hl = require('./libs/hl.js');
 // Configuration
 
 app.configure(function(){
@@ -62,7 +62,8 @@ app.get('/s/:id', function(req, res) {
         if(!err) {
             res.render('show', {
                 title: 'bla', 
-                docs: doc
+                docs: doc,
+                hl: hl 
             });       
         }
     });
