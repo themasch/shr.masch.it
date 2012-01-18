@@ -1,11 +1,13 @@
 <div class="file">
-    <input type="text" name="file[0][name]" class="shrFilename" placeholder="filename" />
+  <div class="header">
+    <label for="file[0]">Filename:</label><input type="text" name="file[0][name]" id="file[0]" class="shrFilename" style="width: 80%"/>
     <select name="file[0][lang]" style="float: right">
         <option value="none">plain text</option>
         <option value="php">PHP</<option>
         <option value="cpp">C++</<option>
     </select>
-    <textarea name="file[0][content]" style="width:914px;min-height:300px;padding:2px;border:1px solid;"></textarea>
+  </div>
+  <textarea name="file[0][content]" style="width:100%;padding:0;min-height:300px;"></textarea>
 </div>
 
 <a href="#" id="addFile">&plus; File</a>
